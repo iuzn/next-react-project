@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react'
 
-function SvgQuestionSquareLight(props) {
+function SvgKimdir(props) {
   return (
     <svg width="1em" height="1em" viewBox="0 0 25 24" fill="none" {...props}>
       <path
@@ -8,7 +8,7 @@ function SvgQuestionSquareLight(props) {
         fill="currentColor"
       />
     </svg>
-  );
+  )
 }
 
-export default SvgQuestionSquareLight;
+export default SvgKimdir

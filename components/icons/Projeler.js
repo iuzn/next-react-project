@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react'
 
-function SvgProjectDiagramLight(props) {
+function SvgProjeler(props) {
   return (
     <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" {...props}>
       <path
@@ -8,7 +8,7 @@ function SvgProjectDiagramLight(props) {
         fill="currentColor"
       />
     </svg>
-  );
+  )
 }
 
-export default SvgProjectDiagramLight;
+export default SvgProjeler

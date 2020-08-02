@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react'
 
-function SvgInstagramSquare(props) {
+function SvgLahzalarFill(props) {
   return (
     <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" {...props}>
       <path
@@ -8,7 +8,7 @@ function SvgInstagramSquare(props) {
         fill="currentColor"
       />
     </svg>
-  );
+  )
 }
 
-export default SvgInstagramSquare;
+export default SvgLahzalarFill

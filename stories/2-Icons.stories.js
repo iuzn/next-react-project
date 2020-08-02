@@ -5,26 +5,23 @@ export default {
   title: 'Icons'
 }
 
-export let Icon
-Icon = () => (
+export const Icon = () => (
   <div className="icons">
-    <Icons.BookReader />
-    <Icons.BookReaderLight />
-    <Icons.Envelope />
-    <Icons.EnvelopeLight />
-    <Icons.Instagram />
-    <Icons.InstagramSquare />
-    <Icons.Lightbulb1 />
-    <Icons.LightbulbOn1 />
-    <Icons.ProjectDiagram />
-    <Icons.ProjectDiagramLight />
-    <Icons.QuestionSquare />
-    <Icons.QuestionSquareLight />
-    <Icons.RssSquare />
-    <Icons.RssSquareRegular />
-    <Icons.Tools />
-    <Icons.ToolsLight />
-    <Icons.University />
-    <Icons.UniversityLight />
+    <Icons.Blog />
+    <Icons.BlogFill />
+    <Icons.Iletisim />
+    <Icons.IletisimFill />
+    <Icons.Kimdir />
+    <Icons.KimdirFill />
+    <Icons.Lahzalar />
+    <Icons.LahzalarFill />
+    <Icons.Maarif />
+    <Icons.MaarifFill />
+    <Icons.Mod />
+    <Icons.ModFill />
+    <Icons.Projeler />
+    <Icons.ProjelerFill />
+    <Icons.Tezgah />
+    <Icons.TezgahFill />
   </div>
 )

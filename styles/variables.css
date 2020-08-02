@@ -1,0 +1,14 @@
+:root{
+    --c-primary: #000;
+    --c-graydark: #333333;
+    --c-grayrich: #4F4F4F;
+    --c-gray: #828282;
+    --c-graypoor: #BDBDBD;
+    --c-whitepoor: #E0E0E0;
+    --c-white: #F2F2F2;
+    --c-whiterich: #FFFFFF;
+    --c-yellow: rgba(242, 201, 76, 1);
+    --c-yellow-20: rgba(242, 201, 76, 0.2);
+
+
+}

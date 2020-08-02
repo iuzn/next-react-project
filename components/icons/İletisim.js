@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react'
 
-function SvgEnvelopeLight(props) {
+function Svgİletisim(props) {
   return (
     <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" {...props}>
       <path
@@ -8,7 +8,7 @@ function SvgEnvelopeLight(props) {
         fill="currentColor"
       />
     </svg>
-  );
+  )
 }
 
-export default SvgEnvelopeLight;
+export default Svgİletisim
