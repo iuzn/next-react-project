@@ -4,6 +4,7 @@
   border-radius: 99px;
   display: flex;
   align-items:center;
+  transition: var(--fade) ;
 
   &:hover{
     color: var(--c-yellow);
