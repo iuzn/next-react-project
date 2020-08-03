@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-function SvgProjelerFill(props) {
+function SvgProjelerFilled(props) {
   return (
     <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" {...props}>
       <path
@@ -11,4 +11,4 @@ function SvgProjelerFill(props) {
   )
 }
 
-export default SvgProjelerFill
+export default SvgProjelerFilled

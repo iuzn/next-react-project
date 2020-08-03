@@ -1,7 +1,7 @@
 import React from 'react'
 import NavigationButton from './navigation-button'
 import {
-  BlogFill,
+  BlogFilled,
   Tezgah,
   Projeler,
   Maarif,
@@ -16,7 +16,7 @@ function Navigation({ selectedKey }) {
   return (
     <nav className={styles.nav}>
       <NavigationButton selected={selectedKey === 'blog'}>
-        <BlogFill />
+        <BlogFilled />
         <TextTitle>Blog</TextTitle>
       </NavigationButton>
 

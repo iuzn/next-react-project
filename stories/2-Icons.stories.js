@@ -1,5 +1,7 @@
 import React from 'react'
 import * as Icons from '../components/icons'
+import Photo from '../components/photo'
+import ProfileBox from '../components/profile-box'
 
 export default {
   title: 'Icons'
@@ -7,21 +9,32 @@ export default {
 
 export const Icon = () => (
   <div className="icons">
+    <Icons.Behance />
     <Icons.Blog />
-    <Icons.BlogFill />
+    <Icons.BlogFilled />
+    <Icons.Dribbble />
+    <Icons.Facebook />
+    <Icons.Github />
     <Icons.Iletisim />
-    <Icons.IletisimFill />
+    <Icons.IletisimFilled />
+    <Icons.index />
+    <Icons.Instagram />
     <Icons.Kimdir />
-    <Icons.KimdirFill />
+    <Icons.KimdirFilled />
     <Icons.Lahzalar />
-    <Icons.LahzalarFill />
+    <Icons.LahzalarFilled />
+    <Icons.Linkedin />
     <Icons.Maarif />
-    <Icons.MaarifFill />
+    <Icons.MaarifFilled />
     <Icons.Mod />
-    <Icons.ModFill />
+    <Icons.ModFilled />
     <Icons.Projeler />
-    <Icons.ProjelerFill />
+    <Icons.ProjelerFilled />
     <Icons.Tezgah />
-    <Icons.TezgahFill />
+    <Icons.TezgahFilled />
+    <Icons.Twitter />
+    <Icons.Youtube />
   </div>
 )
+export const ProfilePhoto = () => <Photo />
+export const Box = () => <ProfileBox />

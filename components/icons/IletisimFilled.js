@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-function SvgİletisimFill(props) {
+function SvgIletisimFilled(props) {
   return (
     <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" {...props}>
       <path
@@ -11,4 +11,4 @@ function SvgİletisimFill(props) {
   )
 }
 
-export default SvgİletisimFill
+export default SvgIletisimFilled
