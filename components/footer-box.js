@@ -27,12 +27,11 @@ function FooterBox() {
         <Linkedin />
         <Github />
         <br />
-
-        <input type="text" placeholder="Ara.." />
+        <a href="https://ibrahimuzun.com">Yardım</a>
+        <a href="https://ibrahimuzun.com">Yardım</a>
+        <a href="https://ibrahimuzun.com">Yardım</a>
         <br />
-        <a href="https://ibrahimuzun.com">Yardım</a>
-        <a href="https://ibrahimuzun.com">Yardım</a>
-        <a href="https://ibrahimuzun.com">Yardım</a>
+        <p>ibrahim uzun © 2020</p>
       </div>
     </div>
   )

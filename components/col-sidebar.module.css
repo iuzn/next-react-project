@@ -1,2 +1,28 @@
 .sidebar {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    align-items: center;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    @media (--d) {
+        align-items: flex-start;
+        padding-right: 46px;
+    }
+}
+.profile {
+    margin-top: 96px;
+    margin-bottom: auto;
+}
+
+.navigation{
+
+}
+
+.footer{
+    margin-top: auto;
+    margin-bottom: 14px;
 }

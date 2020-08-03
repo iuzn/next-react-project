@@ -1,53 +1,67 @@
 import React from 'react'
 import NavigationButton from './navigation-button'
 import {
-  BlogFilled,
   Tezgah,
   Projeler,
   Maarif,
   Lahzalar,
   Kimdir,
-  Iletisim
+  Iletisim,
+  Blog
 } from './icons'
 import styles from './navigation.module.css'
 import TextTitle from './title'
 
+const MENU = [
+  {
+    key: 'blog',
+    icon: <Blog />,
+    title: 'Blog'
+  },
+  {
+    key: 'tezgah',
+    icon: <Tezgah />,
+    title: 'Tezgah'
+  },
+  {
+    key: 'projeler',
+    icon: <Projeler />,
+    title: 'Projeler'
+  },
+  {
+    key: 'maarif',
+    icon: <Maarif />,
+    title: 'Maarif'
+  },
+  {
+    key: 'lahzalar',
+    icon: <Lahzalar />,
+    title: 'Lahzalar'
+  },
+  {
+    key: 'kimdir',
+    icon: <Kimdir />,
+    title: 'Kimdir'
+  },
+  {
+    key: 'iletisim',
+    icon: <Iletisim />,
+    title: 'İletişim'
+  }
+]
+
 function Navigation({ flat, selectedKey }) {
   return (
     <nav className={styles.nav}>
-      <NavigationButton selected={selectedKey === 'blog'}>
-        <BlogFilled />
-        <TextTitle>Blog</TextTitle>
-      </NavigationButton>
-
-      <NavigationButton selected={selectedKey === 'tezgah'}>
-        <Tezgah />
-        <TextTitle>Tezgah</TextTitle>
-      </NavigationButton>
-
-      <NavigationButton selected={selectedKey === 'projeler'}>
-        <Projeler />
-        <TextTitle>Projeler</TextTitle>
-      </NavigationButton>
-
-      <NavigationButton selected={selectedKey === 'maarif'}>
-        <Maarif />
-        <TextTitle>Maarif</TextTitle>
-      </NavigationButton>
-
-      <NavigationButton selected={selectedKey === 'lahzalar'}>
-        <Lahzalar />
-        <TextTitle>Lahzalar</TextTitle>
-      </NavigationButton>
-
-      <NavigationButton selected={selectedKey === 'kimdir'}>
-        <Kimdir />
-        <TextTitle>Kimdir</TextTitle>
-      </NavigationButton>
-      <NavigationButton selected={selectedKey === 'iletisim'}>
-        <Iletisim />
-        <TextTitle>İletişim</TextTitle>
-      </NavigationButton>
+      {MENU.map((menu) => {
+        const showTitle = !flat && menu.title.length > 0
+        return (
+          <NavigationButton selected={selectedKey === menu.key}>
+            {menu.icon}
+            {showTitle && <TextTitle>{menu.title}</TextTitle>}
+          </NavigationButton>
+        )
+      })}
     </nav>
   )
 }

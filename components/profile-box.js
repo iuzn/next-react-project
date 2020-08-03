@@ -3,21 +3,13 @@ import cn from 'classnames'
 
 import styles from './profile-box.module.css'
 import Photo from './photo'
-import {
-  Behance,
-  Dribbble,
-  Facebook,
-  Github,
-  Instagram,
-  Linkedin,
-  Twitter,
-  Youtube
-} from './icons'
+import PhotoFlat from './photo-flat'
 
-function ProfileBox() {
+function ProfileBox({ flat = false }) {
   return (
     <div className={cn([styles.box])}>
-      <Photo />
+      {!flat && <Photo />}
+      {flat && <PhotoFlat />}
     </div>
   )
 }
