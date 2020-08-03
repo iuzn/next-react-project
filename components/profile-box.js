@@ -3,17 +3,21 @@ import cn from 'classnames'
 
 import styles from './profile-box.module.css'
 import Photo from './photo'
-import { Icon } from '../stories/2-Icons.stories'
-import * as Icons from './icons'
-import Blog from './icons/Blog'
+import {
+  Behance,
+  Dribbble,
+  Facebook,
+  Github,
+  Instagram,
+  Linkedin,
+  Twitter,
+  Youtube
+} from './icons'
 
 function ProfileBox() {
   return (
     <div className={cn([styles.box])}>
       <Photo />
-      <div>
-        <Blog />
-      </div>
     </div>
   )
 }

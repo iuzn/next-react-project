@@ -9,21 +9,14 @@ export default {
 
 export const Icon = () => (
   <div className="icons">
-    <Icons.Behance />
     <Icons.Blog />
     <Icons.BlogFilled />
-    <Icons.Dribbble />
-    <Icons.Facebook />
-    <Icons.Github />
     <Icons.Iletisim />
     <Icons.IletisimFilled />
-    <Icons.index />
-    <Icons.Instagram />
     <Icons.Kimdir />
     <Icons.KimdirFilled />
     <Icons.Lahzalar />
     <Icons.LahzalarFilled />
-    <Icons.Linkedin />
     <Icons.Maarif />
     <Icons.MaarifFilled />
     <Icons.Mod />
@@ -32,8 +25,14 @@ export const Icon = () => (
     <Icons.ProjelerFilled />
     <Icons.Tezgah />
     <Icons.TezgahFilled />
-    <Icons.Twitter />
     <Icons.Youtube />
+    <Icons.Facebook />
+    <Icons.Twitter />
+    <Icons.Instagram />
+    <Icons.Dribbble />
+    <Icons.Behance />
+    <Icons.Linkedin />
+    <Icons.Github />
   </div>
 )
 export const ProfilePhoto = () => <Photo />

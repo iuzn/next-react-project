@@ -1,14 +1,17 @@
 import React from 'react'
-import Button from '../components/button'
-import Link from 'next/link'
+import Layout from '../components/layout'
+import useWindowSize from '../Hooks/useWindowSize'
+import CONST from '../constants'
+import Sidebar from '../components/col-sidebar'
+import Main from '../components/col-main'
 function HomePage() {
+  const size = useWindowSize()
+
   return (
-    <div>
-      <h1>Hoşgeldiniz</h1>
-      <Link href="../ui/index.html">
-        <Button>Merhaba</Button>
-      </Link>
-    </div>
+    <Layout>
+      <Sidebar flat={size.width < CONST.DESKTOP_SIZE}>sidebar</Sidebar>
+      <Main>{JSON.stringify(size)}</Main>
+    </Layout>
   )
 }
 

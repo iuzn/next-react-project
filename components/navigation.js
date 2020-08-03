@@ -12,7 +12,7 @@ import {
 import styles from './navigation.module.css'
 import TextTitle from './title'
 
-function Navigation({ selectedKey }) {
+function Navigation({ flat, selectedKey }) {
   return (
     <nav className={styles.nav}>
       <NavigationButton selected={selectedKey === 'blog'}>
