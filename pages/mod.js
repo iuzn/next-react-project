@@ -1,9 +1,10 @@
 import React from 'react'
 
 import Layout from '../components/layout'
+import ModSelect from '../components/mod-select'
 import Header from '../components/header'
 
-function HomePage() {
+function ModPage() {
   return (
     <Layout>
       <Header />
@@ -11,4 +12,4 @@ function HomePage() {
   )
 }
 
-export default HomePage
+export default ModPage

@@ -1,29 +1,5 @@
 .box{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-
-
-}
-
-.social{
-    padding-top: 20px;
 
 
 
-
-
-    svg {
-        cursor: pointer;
-        font-size: 30px;
-        color:var(--c-graydark);
-        & + * {
-            margin-left: 10px;
-            margin-top: 10px;
-        }
-        &:hover{
-            color: var(--c-yellow);
-            background-color: var(--c-yellow-20);
-        }
-    }
 }

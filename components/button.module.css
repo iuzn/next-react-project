@@ -6,10 +6,11 @@
   display: flex;
   align-items:center;
   transition: var(--fade) ;
+  text-decoration: none;
 
   &:hover{
     color: var(--c-yellow);
-    background-color: var(--c-yellow-20);
+    background-color: var(--c-yellow-10);
   }
 
 }

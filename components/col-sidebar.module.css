@@ -8,14 +8,13 @@
     height: 100vh;
     position: sticky;
     top: 0;
-    @media (--d) {
+    @media (--t) {
         align-items: flex-start;
-        padding-right: 46px;
     }
 }
 .profile {
-    margin-top: 96px;
-    margin-bottom: auto;
+
+    margin: 96px auto auto;
 }
 
 .navigation{
@@ -23,6 +22,5 @@
 }
 
 .footer{
-    margin-top: auto;
-    margin-bottom: 14px;
+    margin: auto auto 14px;
 }

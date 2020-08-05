@@ -1,5 +1,4 @@
 import React from 'react'
-import cn from 'classnames'
 
 import styles from './photo-flat.module.css'
 
@@ -8,7 +7,7 @@ function PhotoFlat({
   alt
 }) {
   return (
-    <div className={cn([styles.photo])}>
+    <div>
       <img className={styles.img} src={src} alt={alt} />
     </div>
   )

@@ -1,63 +1,27 @@
 import React from 'react'
-import NavigationButton from './navigation-button'
-import {
-  Tezgah,
-  Projeler,
-  Maarif,
-  Lahzalar,
-  Kimdir,
-  Iletisim,
-  Blog
-} from './icons'
+import { useRouter } from 'next/router'
+
+import { MENU } from '../constants'
 import styles from './navigation.module.css'
+
+import NavigationButton from './navigation-button'
 import TextTitle from './title'
 
-const MENU = [
-  {
-    key: 'blog',
-    icon: <Blog />,
-    title: 'Blog'
-  },
-  {
-    key: 'tezgah',
-    icon: <Tezgah />,
-    title: 'Tezgah'
-  },
-  {
-    key: 'projeler',
-    icon: <Projeler />,
-    title: 'Projeler'
-  },
-  {
-    key: 'maarif',
-    icon: <Maarif />,
-    title: 'Maarif'
-  },
-  {
-    key: 'lahzalar',
-    icon: <Lahzalar />,
-    title: 'Lahzalar'
-  },
-  {
-    key: 'kimdir',
-    icon: <Kimdir />,
-    title: 'Kimdir'
-  },
-  {
-    key: 'iletisim',
-    icon: <Iletisim />,
-    title: 'İletişim'
-  }
-]
-
-function Navigation({ flat, selectedKey }) {
+function Navigation({ flat }) {
+  const router = useRouter()
   return (
     <nav className={styles.nav}>
       {MENU.map((menu) => {
         const showTitle = !flat && menu.title.length > 0
+        const selected = router.pathname === menu.path
         return (
-          <NavigationButton selected={selectedKey === menu.key}>
-            {menu.icon}
+          <NavigationButton
+            key={menu.key}
+            selected={selected}
+            href={menu.path}
+            className={styles.navButton}
+          >
+            {selected ? menu.iconSelected : menu.icon}
             {showTitle && <TextTitle>{menu.title}</TextTitle>}
           </NavigationButton>
         )

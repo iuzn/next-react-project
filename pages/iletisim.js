@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import Header from '../components/header'
 
-function HomePage() {
+function IletisimPage() {
   return (
     <Layout>
       <Header />
@@ -11,4 +11,4 @@ function HomePage() {
   )
 }
 
-export default HomePage
+export default IletisimPage

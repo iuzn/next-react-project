@@ -1,0 +1,8 @@
+.headernone{
+    font-size: 0;
+    display: none;
+}
+.header{
+    display: block;
+    font-size: 2em;
+}

@@ -1,38 +1,35 @@
 import React from 'react'
 import cn from 'classnames'
+import { useRouter } from 'next/router'
 
 import styles from './footer-box.module.css'
-import {
-  Behance,
-  Dribbble,
-  Facebook,
-  Github,
-  Instagram,
-  Linkedin,
-  Twitter,
-  Youtube
-} from './icons'
 
-function FooterBox() {
+import Footer from './footer'
+import { INFO } from '../constants'
+import Button from './button'
+
+function FooterBox({ flat = false }) {
+  const router = useRouter()
   return (
     <div className={cn([styles.box])}>
-      <div className={styles.social}>
-        <Youtube />
-        <Facebook />
-        <Twitter />
-        <Instagram />
-        <br />
-        <Behance />
-        <Dribbble />
-        <Linkedin />
-        <Github />
-        <br />
-        <a href="https://ibrahimuzun.com">Yardım</a>
-        <a href="https://ibrahimuzun.com">Yardım</a>
-        <a href="https://ibrahimuzun.com">Yardım</a>
-        <br />
-        <p>ibrahim uzun © 2020</p>
-      </div>
+      {INFO.map((info) => {
+        const selected = router.pathname === info.path
+        return (
+          <div key={router.pathname}>
+            {!flat && <Footer />}
+            {flat && (
+              <Button
+                href={info.path}
+                key={info.key}
+                selected={selected}
+                className={styles.info}
+              >
+                {selected ? info.iconSelected : info.icon}
+              </Button>
+            )}
+          </div>
+        )
+      })}
     </div>
   )
 }

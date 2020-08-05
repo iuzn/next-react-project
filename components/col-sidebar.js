@@ -15,7 +15,9 @@ function Sidebar({ flat }) {
       <div className={styles.navigation}>
         <Navigation flat={flat} />
       </div>
-      <div className={styles.footer}>{!flat && <FooterBox />}</div>
+      <div className={styles.footer}>
+        <FooterBox flat={flat} />
+      </div>
     </div>
   )
 }

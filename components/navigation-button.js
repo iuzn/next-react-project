@@ -3,10 +3,15 @@ import cn from 'classnames'
 import Button from './button'
 import styles from './navigation-button.module.css'
 
-function NavigationButton({ selected, children, ...props }) {
+function NavigationButton({ href, selected, children, className, ...props }) {
   return (
     <Button
-      className={cn(styles.navButton, selected && styles.navButtonSelected)}
+      className={cn(
+        styles.navButton,
+        selected && styles.navButtonSelected,
+        className
+      )}
+      href={href}
       {...props}
     >
       {children}

@@ -1,0 +1,16 @@
+.header{
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    border-bottom: 1px solid var(--c-graydark) ;
+    align-items: center;
+    height: 54px;
+}
+.headertext{
+    display: block;
+    padding-left: 15px;
+    font-weight: bold;
+
+}
+.modselect{
+    display: block;
+}

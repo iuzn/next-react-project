@@ -7,8 +7,9 @@
 
 .img{
     display: block;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     width: 46px;
-    border-radius: 99px;
+    border-radius: 50%;
 }

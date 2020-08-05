@@ -21,6 +21,8 @@ export const Icon = () => (
     <Icons.MaarifFilled />
     <Icons.Mod />
     <Icons.ModFilled />
+    <Icons.Info />
+    <Icons.InfoFilled />
     <Icons.Projeler />
     <Icons.ProjelerFilled />
     <Icons.Tezgah />
