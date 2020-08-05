@@ -8,8 +8,8 @@ import PhotoFlat from './photo-flat'
 function ProfileBox({ flat = false }) {
   return (
     <div className={cn([styles.box])}>
-      {!flat && <Photo />}
       {flat && <PhotoFlat />}
+      {!flat && <Photo />}
     </div>
   )
 }

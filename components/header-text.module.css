@@ -1,6 +1,5 @@
 .headernone{
-    font-size: 0;
-    display: none;
+    font-size: 2em;
 }
 .header{
     display: block;

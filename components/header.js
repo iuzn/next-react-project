@@ -15,7 +15,7 @@ function Header() {
         {MENU.map((menu) => {
           const selected = router.pathname === menu.path
           return (
-            <HeaderText key={menu.title} selected={selected}>
+            <HeaderText key={menu.title} selected={false}>
               {selected && menu.title}
             </HeaderText>
           )

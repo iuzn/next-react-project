@@ -7,6 +7,11 @@ export default {
 }
 export const MENU = [
   {
+    key: 'anasayfa',
+    path: '/',
+    title: 'Anasayfa'
+  },
+  {
     key: 'blog',
     path: '/blog',
     icon: <Icon.Blog />,

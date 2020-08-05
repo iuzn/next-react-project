@@ -10,7 +10,7 @@ function Photo({
 }) {
   return (
     <div className={cn([styles.photo])}>
-      <img className={styles.img} src={src} alt={alt} />
+      <img className={styles.image} src={src} alt={alt} />
       <p className={styles.title}>{name}</p>
     </div>
   )
