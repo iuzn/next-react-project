@@ -18,7 +18,7 @@ function BaseButton({ children, ...props }) {
   )
 }
 
-function Button({ children, className, ...props }) {
+function Button({ children, className, src, alt, ...props }) {
   const Comp = props.href ? LinkButton : BaseButton
 
   return (

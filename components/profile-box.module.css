@@ -1,5 +1,37 @@
 .box{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 
+}
+.image{
+    flex-shrink: 0;
 
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 80px;
+    border-radius: 99px;
+}
+.imageflat{
+    flex-shrink: 0;
+
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 46px;
+    border-radius: 99px;
+}
+.title{
+    width: 100%;
+    font-size: 19px;
+    padding-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.photo{
 
 }
