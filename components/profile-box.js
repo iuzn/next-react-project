@@ -9,12 +9,12 @@ function ProfileBox({ flat = false }) {
       {IMG.map((img) => {
         const showTitle = !flat && img.name.length > 0
         return (
-          <div className={styles.photo}>
-            {flat && (
-              <div>
+          <div key={img.src} className={styles.photo}>
+            <div>
+              {flat && (
                 <img className={styles.imageflat} src={img.src} alt={img.alt} />
-              </div>
-            )}
+              )}
+            </div>
             {!flat && (
               <img className={styles.image} src={img.src} alt={img.alt} />
             )}
