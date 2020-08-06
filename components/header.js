@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import cn from 'classnames'
 
 import styles from './header.module.css'
@@ -6,9 +6,13 @@ import ModSelect from './mod-select'
 import HeaderText from './header-text'
 import { MENU } from '../constants'
 import { useRouter } from 'next/router'
+import Button from './button'
+import { ModFilled } from './icons'
 
 function Header() {
   const router = useRouter()
+  const [isShowMod, isShowModset] = useState(false)
+
   return (
     <div className={cn(styles.header)}>
       <div className={styles.headertext}>
@@ -22,7 +26,13 @@ function Header() {
         })}
       </div>
       <div className={styles.modselect}>
-        <ModSelect />
+        <Button
+          className={styles.buton}
+          onClick={() => isShowModset(!isShowMod)}
+        >
+          <ModFilled />
+        </Button>
+        {isShowMod && <ModSelect onClick={() => isShowModset(false)} />}
       </div>
     </div>
   )

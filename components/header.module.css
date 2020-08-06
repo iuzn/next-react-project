@@ -1,7 +1,7 @@
 .header{
     display: grid;
     grid-template-columns: 1fr 120px;
-    border-bottom: 1px solid var(--c-graydark) ;
+    border-bottom: 1px solid var(--c-border) ;
     align-items: center;
     height: 54px;
 }
@@ -14,4 +14,9 @@
 }
 .modselect{
     display: block;
+}
+.buton{
+    svg{
+        font-size: 30px;
+    }
 }

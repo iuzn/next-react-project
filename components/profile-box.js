@@ -15,10 +15,15 @@ function ProfileBox({ flat = false }) {
                 <img className={styles.imageflat} src={img.src} alt={img.alt} />
               )}
             </div>
-            {!flat && (
-              <img className={styles.image} src={img.src} alt={img.alt} />
-            )}
-            {showTitle && <h2 className={styles.title}>{img.name}</h2>}
+            <div>
+              {!flat && (
+                <img className={styles.image} src={img.src} alt={img.alt} />
+              )}
+            </div>
+
+            <div>
+              {showTitle && <h2 className={styles.title}>{img.name}</h2>}
+            </div>
           </div>
         )
       })}

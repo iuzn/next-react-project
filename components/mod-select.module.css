@@ -1,5 +1,124 @@
+.overlay{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.3);
+
+
+}
+
+.mod{
+
+  display: grid;
+  grid-template-rows: 20px 80px 1fr 80px;
+  align-items: stretch;
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  border: 1px solid var(--c-text-color);
+  background-color: var(--c-primary);
+  border-radius: 20px;
+  margin: 20px;
+  h2{
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: auto;
+
+  }
+  h3{
+    text-transform:capitalize;
+    text-align: center;
+    font-size: 30px;
+
+    margin-bottom: auto;
+    padding-bottom: 60px;
+
+
+  }
+
+
+}
+
 .container{
-  input[type="radio"]{
-    font-size: 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position:relative;
+  width:100%;
+  margin:0 auto;
+
+}
+
+.button{
+  display: flex;
+  align-items: center;
+  min-height: 64px;
+  box-sizing: border-box;
+  -webkit-box-flex: 1;
+  outline-style: none;
+  cursor: pointer;
+  background-color: var(--c-white);
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  border: 3px solid var(--c-text-color) ;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  width:80px;
+  border-radius:99px;
+
+
+  input[type='radio'] {
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 74px;
+    width: 1em;
+    height: 1em;
+    background-color: var(--c-text-color);
+  }
+
+  &:hover{
+    color: var(--c-primary);
+    background-color: var(--c-yellow);}
+}
+.kapat{
+  display: grid;
+  grid-row-end: auto;
+  margin: -15px -15px auto auto;
+  font-size: 30px;
+  &:hover{
+    color: var(--c-primary);
+    background-color: var(--c-yellow);
   }
 }
+.container [id="Light"]{
+  background-color: white;
+}
+.container [id="Dark"]{
+  background-color: black;
+}
+.container [id="Sepia"]{
+  background-color: #F5DD9F;
+}
+.container [id="Dim"]{
+  background-color: #16202A;
+}
+
+
+
+
+
+
+
+
+

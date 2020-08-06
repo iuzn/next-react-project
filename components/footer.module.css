@@ -3,7 +3,7 @@
     svg {
         cursor: pointer;
         font-size: 30px;
-        color:var(--c-graydark);
+        color:var(--c-border);
         & + * {
             margin-left: 10px;
             margin-top: 10px;
