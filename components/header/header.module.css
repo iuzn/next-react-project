@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 120px;
     border-bottom: 1px solid var(--c-border) ;
+    border-right: 1px solid var(--c-border) ;
     align-items: center;
     height: 54px;
 }
@@ -14,6 +15,7 @@
 }
 .modselect{
     display: block;
+    place-self: center;
 }
 .buton{
     svg{

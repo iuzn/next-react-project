@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
 import cn from 'classnames'
 
-import styles from './mod-select.module.css'
-import StoreContext from '../store'
-import { Kapat } from './icons'
-import Button from './button'
+import styles from './style.module.css'
+import StoreContext from '../../store'
+import { Kapat } from '../icons'
+import Button from '../button'
 
 const THEME = {
   light: 'Light',

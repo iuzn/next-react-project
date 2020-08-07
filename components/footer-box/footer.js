@@ -8,7 +8,7 @@ import {
   Linkedin,
   Twitter,
   Youtube
-} from './icons'
+} from '../icons'
 import React from 'react'
 
 function Footer() {

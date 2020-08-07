@@ -1,9 +1,9 @@
 import React from 'react'
 
-import { IMG } from '../constants'
-import styles from './profile-box.module.css'
+import { IMG } from '../../constants'
+import styles from './style.module.css'
 
-function ProfileBox({ flat = false }) {
+function ModSelect({ flat = false }) {
   return (
     <div className={styles.box}>
       {IMG.map((img) => {
@@ -30,4 +30,4 @@ function ProfileBox({ flat = false }) {
     </div>
   )
 }
-export default ProfileBox
+export default ModSelect

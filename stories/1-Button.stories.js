@@ -1,11 +1,9 @@
 import React from 'react'
-import Button from '../components/button'
-import NavigationButton from '../components/navigation-button'
-import Navigation from '../components/navigation'
+import Button from '../components/button/'
+import NavigationButton from '../components/nav/button'
+import Navigation from '../components/nav/navigation'
 import { Tezgah } from '../components/icons'
 import TextTitle from '../components/title'
-import ThemeButton from '../components/theme-button'
-import Stack from '../components/stack'
 import { withKnobs, boolean } from '@storybook/addon-knobs'
 
 export default {
@@ -14,16 +12,6 @@ export default {
 }
 
 export const Normal = () => <Button>Save</Button>
-
-export const Theme = () => (
-  <Stack column>
-    <ThemeButton>Save</ThemeButton>
-    <ThemeButton full>Save Full</ThemeButton>
-    <ThemeButton full big>
-      Save Big Button
-    </ThemeButton>
-  </Stack>
-)
 
 export const NavButton = () => (
   <NavigationButton>

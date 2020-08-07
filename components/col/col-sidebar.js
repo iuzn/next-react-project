@@ -2,9 +2,9 @@ import React from 'react'
 import cn from 'classnames'
 
 import styles from './col-sidebar.module.css'
-import Navigation from './navigation'
-import ProfileBox from './profile-box'
-import FooterBox from './footer-box'
+import Navigation from '../nav/navigation'
+import ProfileBox from '../profile-box/'
+import FooterBox from '../footer-box/footer-box'
 
 function Sidebar({ flat }) {
   return (

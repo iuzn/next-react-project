@@ -1,6 +1,6 @@
 import React from 'react'
 import * as Icons from '../components/icons'
-import ProfileBox from '../components/profile-box'
+import ProfileBox from '../components/profile-box/'
 
 export default {
   title: 'Icons'

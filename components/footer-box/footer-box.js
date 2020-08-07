@@ -5,8 +5,8 @@ import { useRouter } from 'next/router'
 import styles from './footer-box.module.css'
 
 import Footer from './footer'
-import { INFO } from '../constants'
-import Button from './button'
+import { INFO } from '../../constants'
+import Button from '../button'
 
 function FooterBox({ flat = false }) {
   const router = useRouter()

@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import cn from 'classnames'
 
 import styles from './header.module.css'
-import ModSelect from './mod-select'
+import ModSelect from '../mod-select'
 import HeaderText from './header-text'
-import { MENU } from '../constants'
+import { MENU } from '../../constants'
 import { useRouter } from 'next/router'
-import Button from './button'
-import { ModFilled } from './icons'
+import Button from '../button'
+import { ModFilled } from '../icons'
 
 function Header() {
   const router = useRouter()

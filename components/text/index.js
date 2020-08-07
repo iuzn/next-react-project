@@ -1,6 +1,6 @@
 import React from 'react'
 import cn from 'classnames'
-import styles from './text.module.css'
+import styles from './style.module.css'
 
 function TextBody({ bold = false, className, children, ...props }) {
   return (
