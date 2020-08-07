@@ -3,7 +3,7 @@ import cn from 'classnames'
 
 import styles from './style.module.css'
 import StoreContext from '../../store'
-import { Kapat } from '../icons'
+import { Check, Kapat } from '../icons'
 import Button from '../button'
 
 const THEME = {
@@ -35,6 +35,7 @@ function ModSelect({ onClick = () => {} }) {
         <div className={styles.container}>
           {['light', 'dark', 'sepia', 'dim'].map((theme) => (
             <label key={theme} id={THEME[theme]} className={styles.button}>
+              <Check id={THEME[theme]} />
               <input
                 type="radio"
                 value={theme}
@@ -42,7 +43,6 @@ function ModSelect({ onClick = () => {} }) {
                 checked={theme === store.theme}
                 onChange={(e) => store.changeTheme(e.target.value)}
               />
-              {THEME.null}
             </label>
           ))}
         </div>

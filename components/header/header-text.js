@@ -5,12 +5,12 @@ import styles from './header-text.module.css'
 function HeaderText({ selected, children, ...props }) {
   return (
     <div>
-      <h2
+      <h3
         className={cn(styles.headernone, selected && styles.header)}
         {...props}
       >
         {children}
-      </h2>
+      </h3>
     </div>
   )
 }

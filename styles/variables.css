@@ -16,7 +16,7 @@
 
 .dim:root {
     --c-primary: #16202a;
-    --c-border: rgba(55,55,55,0.2);
+    --c-border: #2f3336;
     --c-social: #4F4F4F;
     --c-gray: #828282;
     --c-graypoor: #BDBDBD;
@@ -41,7 +41,7 @@
 }
 .sepia:root {
     --c-primary: #f5dd9f;
-    --c-border: rgba(55,55,55,0.2);
+    --c-border: rgba(108, 84, 62,0.4);
     --c-grayrich: #4F4F4F;
     --c-gray: #828282;
     --c-graypoor: #BDBDBD;

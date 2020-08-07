@@ -1,6 +1,7 @@
 export { default as Behance } from './Behance'
 export { default as Blog } from './Blog'
 export { default as BlogFilled } from './BlogFilled'
+export { default as Check } from './Check'
 export { default as Dribbble } from './Dribbble'
 export { default as Facebook } from './Facebook'
 export { default as Github } from './Github'

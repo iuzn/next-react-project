@@ -15,7 +15,7 @@
 .mod{
 
   display: grid;
-  grid-template-rows: 20px 80px 1fr 80px;
+  grid-template-rows: 20px 80px 1fr 100px;
   align-items: stretch;
   width: 100%;
   max-width: 600px;
@@ -52,13 +52,17 @@
   position:relative;
   width:100%;
   margin:0 auto;
-
+  svg{
+    margin-left: auto;
+    margin-right: auto;
+    font-size:8vw;
+    color: var(--c-text-color);
+  }
 }
 
 .button{
   display: flex;
   align-items: center;
-  min-height: 64px;
   box-sizing: border-box;
   -webkit-box-flex: 1;
   outline-style: none;
@@ -68,23 +72,21 @@
   padding-left: 20px;
   padding-right: 20px;
 
+
   border: 3px solid var(--c-text-color) ;
 
   margin-right: auto;
   margin-left: auto;
 
-  width:80px;
+  width:100%;
+  max-width: 65px;
+  height: 65px;
+  max-height: 100px;
   border-radius:99px;
 
 
   input[type='radio'] {
-    cursor: pointer;
-    margin-right: auto;
-    margin-left: auto;
-    font-size: 74px;
-    width: 1em;
-    height: 1em;
-    background-color: var(--c-text-color);
+    display: none;
   }
 
   &:hover{
@@ -112,6 +114,18 @@
 }
 .container [id="Dim"]{
   background-color: #16202A;
+}
+.button [id="Light"]{
+  color:black;
+}
+.button [id="Dark"]{
+  color:white;
+}
+.button [id="Sepia"]{
+  color:black;
+}
+.button [id="Dim"]{
+  color:white;
 }
 
 
