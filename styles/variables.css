@@ -1,7 +1,6 @@
 :root{
 
     --c-primary: #fff;
-    --c-blue: #3257A7;
     --c-border: rgb(230, 236, 240);
     --c-social: #4F4F4F;
     --c-gray: #828282;
@@ -9,8 +8,8 @@
     --c-whitepoor: #E0E0E0;
     --c-white: #F2F2F2;
     --c-text-color: #000;
-    --c-yellow: rgba(242, 201, 76, 1);
-    --c-yellow-10: rgba(242, 201, 76, 0.1);
+    --c-yellow: rgba(50,87,167, 1);
+    --c-yellow-10: rgba(50,87,167, 0.1);
 
     --fade: 240ms;
 
@@ -50,6 +49,6 @@
     --c-whitepoor: #E0E0E0;
     --c-white: #F2F2F2;
     --c-text-color: #6C543E;
-    --c-yellow: rgba(245,178,159, 1);
-    --c-yellow-10: rgba(245,178,159, 0.1);
+    --c-yellow: rgba(50,87,167, 1);
+    --c-yellow-10: rgba(50,87,167, 0.1);
 }
