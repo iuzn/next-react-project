@@ -59,6 +59,7 @@
     margin-right: auto;
     font-size:8vw;
     color: var(--c-text-color);
+    display: none;
   }
 }
 
@@ -128,6 +129,7 @@
   .container [id="Light"]{
     border: 3px solid var(--c-yellow) ;
     svg:nth-child(1) {
+      display: flex;
       color: var(--c-yellow);
       border: transparent ;
     }
@@ -137,6 +139,7 @@
   .container [id="Dark"]{
     border: 3px solid var(--c-yellow) ;
     svg:nth-child(1) {
+      display: flex;
       color: var(--c-yellow);
       border: transparent ;
     }
@@ -146,6 +149,7 @@
   .container [id="Sepia"]{
     border: 3px solid var(--c-yellow) ;
     svg:nth-child(1) {
+      display: flex;
       color: var(--c-yellow);
       border: transparent ;
     }
@@ -155,6 +159,7 @@
   .container [id="Dim"]{
     border: 3px solid var(--c-yellow) ;
     svg:nth-child(1) {
+      display: flex;
       color: var(--c-yellow);
       border: transparent ;
     }
