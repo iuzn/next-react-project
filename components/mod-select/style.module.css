@@ -113,21 +113,25 @@
   }
 }
 .container [id="Light"]{
+  border: 3px solid black;
   background-color: white;
 }
 .container [id="Dark"]{
+  border: 3px solid white;
   background-color: black;
 }
 .container [id="Sepia"]{
+  border: 3px solid #6C543E;
   background-color: #F5DD9F;
 }
 .container [id="Dim"]{
+  border: 3px solid #E5E5E5;
   background-color: #16202A;
 }
 
 :global(.light):root {
   .container [id="Light"]{
-    border: 3px solid var(--c-yellow) ;
+    border: 3px solid var(--c-yellow);
     svg:nth-child(1) {
       display: flex;
       color: var(--c-yellow);
@@ -137,7 +141,7 @@
 }
 :global(.dark):root {
   .container [id="Dark"]{
-    border: 3px solid var(--c-yellow) ;
+    border: 3px solid var(--c-yellow);
     svg:nth-child(1) {
       display: flex;
       color: var(--c-yellow);
@@ -147,7 +151,7 @@
 }
 :global(.sepia):root {
   .container [id="Sepia"]{
-    border: 3px solid var(--c-yellow) ;
+    border: 3px solid var(--c-yellow);
     svg:nth-child(1) {
       display: flex;
       color: var(--c-yellow);
@@ -157,7 +161,7 @@
 }
 :global(.dim):root {
   .container [id="Dim"]{
-    border: 3px solid var(--c-yellow) ;
+    border: 3px solid var(--c-yellow);
     svg:nth-child(1) {
       display: flex;
       color: var(--c-yellow);
@@ -165,16 +169,3 @@
     }
   }
 }
-.button [id="Light"]{
-  color:black;
-}
-.button [id="Dark"]{
-  color:white;
-}
-.button [id="Sepia"]{
-  color:black;
-}
-.button [id="Dim"]{
-  color:white;
-}
-
