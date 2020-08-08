@@ -11,7 +11,7 @@
     display: block;
     padding-left: 15px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 0.5vh;
     color: var(--c-yellow);
 
     @media (--d) {
