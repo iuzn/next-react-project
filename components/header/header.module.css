@@ -1,6 +1,6 @@
 .header{
     display: grid;
-    grid-template-columns: 1fr 120px;
+    grid-template-columns: 1fr 80px;
     border-bottom: 1px solid var(--c-border) ;
     border-right: 1px solid var(--c-border) ;
     align-items: center;
@@ -11,8 +11,6 @@
     display: block;
     padding-left: 15px;
     font-weight: bold;
-    margin-bottom: auto;
-    margin-top: 2px;
     color: var(--c-yellow);
 
     @media (--d) {
